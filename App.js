@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import {
   Dimensions,
   StyleSheet,
-  SafeAreaView,
   View,
   Text,
   Image,
@@ -28,7 +27,7 @@ export default function TrafficLight() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
 
       <Image fadeDuration={0} source={imageSource} style={styles.image} />
 
@@ -54,7 +53,7 @@ export default function TrafficLight() {
           <Text style={styles.buttonText}>Verde</Text>
         </TouchableHighlight>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
